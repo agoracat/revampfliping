@@ -1,0 +1,106 @@
+/* Réinitialisation des marges et styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corps de la page */
+body {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* En-tête */
+header {
+    margin-bottom: 20px;
+}
+
+/* Animation RGB synchronisée pour tous les titres */
+h1, h2 {
+    font-size: 2.5em;
+    color: #fff;
+    background: linear-gradient(90deg, red, orange, yellow, cyan, blue, violet);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rgb-sync 5s infinite linear;
+    animation-delay: 0s; /* Synchronisation des animations */
+}
+
+/* Définition de l'animation RGB synchronisée */
+@keyframes rgb-sync {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Style de la section principale */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section de présentation du mod */
+.mod-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.mod-image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.mod-description {
+    max-width: 800px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Bouton de téléchargement */
+.download-section {
+    margin-top: 30px;
+}
+
+#download-btn {
+    background: linear-gradient(90deg, #6b3a12, #8f4021);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+#download-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #2a7d40, #3da35a);
+}
+
+/* Message de confirmation */
+#download-message {
+    margin-top: 15px;
+    font-size: 1em;
+    color: #3da35a;
+}
+
+/* Pied de page */
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #888;
+}
