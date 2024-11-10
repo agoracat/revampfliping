@@ -5,7 +5,7 @@ document.getElementById('download-btn').addEventListener('click', () => {
     const downloadMessage = document.getElementById('download-message');
     
     // Lien de téléchargement
-    const modLink = 'https://www.mediafire.com/file/yfdr3j4wxq1ft9g/Revamp_Fliping_1.8.9.jar/file';
+    const modLink = 'https://www.mediafire.com/file/qs75dgi6wvhl0qk/Fliping_Revamp_1.8.9.jar/file';
 
     // Redirection vers le lien
     window.location.href = modLink;
